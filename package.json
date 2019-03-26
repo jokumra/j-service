@@ -8,8 +8,12 @@
     "node": ">=6.13.0"
   },
   "scripts": {
+    "seed": "node seed.js"
   },
   "dependencies": {
+    "faker": "^4.1.0",
+    "knex": "^0.16.3",
+    "mysql": "^2.16.0"
   },
   "devDependencies": {
     "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor"
