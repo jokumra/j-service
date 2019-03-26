@@ -23,6 +23,7 @@ var images = [
   "https://s3.us-east-2.amazonaws.com/mash-bnb-fec/annie-spratt-536921-unsplash.jpg"
 ];
 
+console.log('Seeding begins');
 const connection = mysql.createConnection({
   host: "localhost",
   user: "root",
@@ -57,3 +58,12 @@ for (let i = 1, j = 0; i <= 100; i++) {
     j+=1;
   }
 }
+connection.end(function(err) {
+  // The connection is terminated now
+  if (err) throw err;
+  console.log("Connection closed");
+});
+
+process.on('exit', function(code) {
+    return console.log(`About to exit with code ${code}`);
+});
