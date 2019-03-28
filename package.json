@@ -8,9 +8,15 @@
     "node": ">=6.13.0"
   },
   "scripts": {
+    "seed": "node seed.js",
     "test": "mocha"
   },
-  "dependencies": {},
+  "dependencies": {
+    "express": "^4.16.4",
+    "faker": "^4.1.0",
+    "knex": "^0.16.3",
+    "mysql": "^2.16.0"
+  },
   "devDependencies": {
     "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
     "mocha": "^6.0.2"
