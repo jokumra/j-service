@@ -17,10 +17,8 @@ const getImages = function(houseId, callback) {
     [houseId],
     (err, rows) => {
       if (err) throw err;
-
-      console.log("Data received from Db:\n");
-      console.log(rows);
-      callback(rows);
+      let result = rows.map(n=>n.image_url);
+      callback(result);
     }
   );
 };

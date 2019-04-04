@@ -12,6 +12,7 @@ app.get('/house_images', (req,res) => {
    console.log("Request query:", id);
 
   database.getImages(id,(data)=> {
+   // console.log("Got data:", data);
     res.send({results:data});
   });
   //console.log("Sample data:", data);
