@@ -9,13 +9,11 @@ app.use(express.static('client/dist1'));
 app.use(bodyParser.json());
 app.get('/house_images', (req,res) => {
    let id = req.query.id;
-   console.log("Request query:", id);
 
   database.getImages(id,(data)=> {
-   // console.log("Got data:", data);
     res.send({results:data});
   });
-  //console.log("Sample data:", data);
+
 
 })
 
