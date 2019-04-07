@@ -7,14 +7,14 @@ import styled from 'styled-components';
 class ImageList extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      images: props.images
-    };
+
   }
   render() {
     console.log("Images:", this.props.images);
-    let mainImg = this.state.images[0];
-    let otherImages = this.state.images.slice(1);
+    let mainImg = this.props.images[0];
+    let otherImages = this.props.images.slice(1);
+    console.log("Main Images:", mainImg);
+    console.log("Other Images:", otherImages);
 
     const LeftDiv = styled.div`
     background: yellow;
