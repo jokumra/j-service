@@ -51,4 +51,4 @@ class App extends React.Component {
 }
 
 const id = Math.floor(Math.random() * 5) +1;
-ReactDOM.render(<App id={id}/>, document.getElementById("app"));
+ReactDOM.render(<App id={id}/>, document.getElementById("images"));
