@@ -27,6 +27,7 @@ console.log("Seeding begins");
 const connection = mysql.createConnection({
   host: "localhost",
   user: "root",
+  password:"password",
   database: "mashBnB"
 });
 connection.connect(err => {
