@@ -25,7 +25,7 @@ class App extends React.Component {
   }
 
   getData() {
-    let url = 'http://localhost:3003/house_images?id='+this.props.id;
+    let url = '/house_images?id='+this.props.id;
 
     console.log("Url is:", url);
 
