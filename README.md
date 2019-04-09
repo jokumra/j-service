@@ -18,15 +18,17 @@
 ## Usage
 
 > Some usage instructions
-1. Install MySql DB locally
-2. Create database & tables by using :
+1. Install the dependencies by running :
+    npm install
+2. Install MySql DB locally
+3. Create database & tables by using :
     mysql -u root -p < schema.sql
-2. Run the seed script with :
+4. Run the seed script with :
     npm seed
-3. Run the node server with:
+5. Run the node server with:
     npm server
    It will be hosted at port 3003
-4. Build the images component with:
+6. Build the images component with:
     npm build
 
 ## Requirements
