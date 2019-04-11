@@ -11,14 +11,20 @@ class Image extends React.Component {
     background-image: url('${this.props.imageurl}');
 
     height:100%;
-    width:50%;
+    width:100%;
     border: white solid 1px;
     background-size: 100% 100%;
+    background-position: center;
+    transition: all 0.5s ease;
+    &:hover {
+      transform: scale(1.2);
+    }
 
     `
     return (
-
+      <div  style={{'height': '100%' , 'width':'50%', 'overflow': 'hidden'}}>
        <RightChild></RightChild>
+      </div>
 
     );
   }

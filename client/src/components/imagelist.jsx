@@ -21,13 +21,19 @@ class ImageList extends React.Component {
     border: white solid 1px;
     width:50%;
     height:100%;
+    overflow:hidden
     `
     const LeftChild = styled.div`
     background-image: url('${mainImg}');
     background-size: 100% 100%;
     border: white solid 1px;
     width:100%;
-    height:100%
+    height:100%;
+    transition: all 0.5s ease;
+    &:hover {
+      transform: scale(1.2);
+    }
+
     `
     const RightDiv = styled.div`
     background: green;
