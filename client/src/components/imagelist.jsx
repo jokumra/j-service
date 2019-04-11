@@ -18,15 +18,17 @@ class ImageList extends React.Component {
 
     const LeftDiv = styled.div`
     background: yellow;
-    border: white solid 1px;
+
+    border: solid black 1px;
+    border-right: 0;
     width:50%;
     height:100%;
-    overflow:hidden
+    overflow:hidden;
     `
     const LeftChild = styled.div`
     background-image: url('${mainImg}');
     background-size: 100% 100%;
-    border: white solid 1px;
+
     width:100%;
     height:100%;
     transition: all 0.5s ease;
@@ -37,6 +39,9 @@ class ImageList extends React.Component {
     `
     const RightDiv = styled.div`
     background: green;
+    border: solid black 1px;
+    border-left:0;
+    border-top:0;
     display:flex;
      flex-direction: column;
      width:50%;

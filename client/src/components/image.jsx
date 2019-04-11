@@ -12,7 +12,7 @@ class Image extends React.Component {
 
     height:100%;
     width:100%;
-    border: white solid 1px;
+    border: solid black 1px;
     background-size: 100% 100%;
     background-position: center;
     transition: all 0.5s ease;
