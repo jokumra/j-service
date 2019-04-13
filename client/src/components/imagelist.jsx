@@ -36,7 +36,7 @@ class ImageList extends React.Component {
       transform: scale(1.2);
     }
 
-    `
+    `;
     const RightDiv = styled.div`
     background: green;
     border: solid black 1px;
@@ -46,38 +46,36 @@ class ImageList extends React.Component {
      flex-direction: column;
      width:50%;
     height:100%
-    `
+    `;
     const Container= styled.div`
     background : red;
   height:80vh;
   width:100%;
   display: flex;
-
-
-    `
-  const imageRows=[];
-  let rowNumber = -1;
-  for(let i =0; i < otherImages.length ; i++){
-    if (i % 2 == 0) {
-      rowNumber +=1 ;
-      let newRow=[];
-      newRow.push(otherImages[i]);
-      imageRows.push(newRow);
-    } else {
-      imageRows[rowNumber].push(otherImages[i]);
+    `;
+    const imageRows=[];
+    let rowNumber = -1;
+    for(let i =0; i < otherImages.length ; i++){
+      if (i % 2 === 0) {
+        rowNumber +=1 ;
+        let newRow=[];
+        newRow.push(otherImages[i]);
+        imageRows.push(newRow);
+      } else {
+        imageRows[rowNumber].push(otherImages[i]);
+      }
     }
-  }
 
-  console.log("Elements:", imageRows);
+    console.log("Elements:", imageRows);
 
     return (
-     <Container>
-      <LeftDiv><LeftChild></LeftChild></LeftDiv>
-      <RightDiv>
-        {imageRows.map(row=>
-          <ImageRow images={row}></ImageRow>
-        )}
-      </RightDiv>
+      <Container>
+        <LeftDiv><LeftChild></LeftChild></LeftDiv>
+        <RightDiv>
+          {imageRows.map(row=>
+            <ImageRow images={row}></ImageRow>
+          )}
+        </RightDiv>
       </Container>
     );
   }
