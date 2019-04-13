@@ -20,7 +20,7 @@ class App extends React.Component {
     this.state = {
       images: []
     };
-   // this.getData.bind(this);
+    // this.getData.bind(this);
     this.getData();
   }
 
@@ -29,19 +29,17 @@ class App extends React.Component {
 
     console.log("Url is:", url);
 
-  fetch(url)
-  .then(res=>res.json())
-  .then((res) => {
-    console.log(JSON.stringify(res));
-    console.log("fetch - This is:", this);
-    console.log(res.results);
-    this.setState({images:res.results});
-  });
+    fetch(url)
+      .then(res=>res.json())
+      .then((res) => {
+        console.log(res.results);
+        this.setState({images:res.results});
+      });
 
   }
 
   render() {
-    console.log("Render");
+    console.log('Render');
     return (
       <div className = {styles.wrapper}>
         <Imagelist images={this.state.images} />

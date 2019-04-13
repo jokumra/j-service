@@ -20,10 +20,10 @@ class Image extends React.Component {
       transform: scale(1.2);
     }
 
-    `
+    `;
     return (
       <div  style={{'height': '100%' , 'width':'50%', 'overflow': 'hidden'}}>
-       <RightChild></RightChild>
+        <RightChild></RightChild>
       </div>
 
     );

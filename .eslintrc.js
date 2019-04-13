@@ -6,5 +6,24 @@
  */
 
 module.exports = {
-  extends: './node_modules/eslint-config-hackreactor/index.js'
+  extends: "airbnb-base",
+  rules: {
+    'no-console': 'off',
+    'comma-dangle': 'off',
+    'class-methods-use-this': 'off',
+    'no-undef': 'off',
+    'no-plusplus': 'off',
+    'prefer-rest-params': 'off',
+    'no-else-return': 'off',
+    'no-underscore-dangle': 'off',
+    'import/extensions': 'off',
+    'prefer-destructuring': 'off',
+    'react/destructuring-assignment': 'off',
+    'array-callback-return': 'off',
+    'react/prop-types': 'off',
+    'react/jsx-filename-extension': 'off',
+    'no-nested-ternary': 'off',
+    'no-param-reassign': 'off',
+    'react/jsx-one-expression-per-line': 'off'
+  }
 };
