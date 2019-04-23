@@ -12,7 +12,6 @@ app.use(express.static('client/dist1'));
 app.use(bodyParser.json());
 app.get('/house_images', (req, res) => {
   const id = req.query.id;
-
   database.getImages(id, (data) => {
     res.send({ results: data });
   });
